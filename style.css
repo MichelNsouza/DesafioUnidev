@@ -1,0 +1,276 @@
+/*confg global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: none;
+}
+strong{
+    color: red;
+}       
+
+/*config de corpo*/
+
+    body{
+        background-color: white;
+        padding-left: 20vmax ;
+        padding-right: 20vmax;
+        padding-top: 50px;
+    }
+
+/*cabeça*/
+        header{
+            background-color: red;
+            background:url(img/image\ 1.png);
+            background-repeat: no-repeat;
+            background-size: 50px;
+            background-position: absolute;
+            text-align: center;
+        }
+        header > p{
+            padding-top: 20px;
+        }
+            #colap{
+                padding-top: 0;
+            }
+
+/*conteudo*/
+        main{
+            width: 80vmax;
+            height: 400px;
+        }
+       
+        .container{
+            height: 400px;
+            padding: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+        } 
+        .corpo{
+            background-color: #F5EBDC;
+            Width: 1140px;
+            Height: 1128px;
+
+        
+        }
+            #corpo{
+                padding: 10px;
+            }
+            .retangulotop1{
+                background-image: url(img/image\ 2.png);
+                background-color: white;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 150px;
+                height: 150px;
+            }
+            .retangulobot1{
+                background-color: #FED8B5;
+                width: 150px;
+                height: 100px;
+            }
+
+            .retangulotop2{
+                background-image: url(img/image\ 3.png);
+                background-color: white;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 150px;
+                height: 150px;
+            }
+            .retangulobot2{
+                background-color: #FED8B5;
+                width: 150px;
+                height: 100px;
+            }
+
+            .retangulotop3{
+                background-image: url(img/image\ 4.png);
+                background-color: white;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 150px;
+                height: 150px;
+            }
+            .retangulobot3{
+                background-color: #FED8B5;
+                width: 150px;
+                height: 100px;
+            }
+
+            #retangulotop4{
+                background-image: url(img/image\ 5.png);
+                background-color: white;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 150px;
+                height: 150px;
+            }
+            #retangulobot4{
+                background-color: #FED8B5;
+                width: 150px;
+                height: 100px;
+            }
+    
+            #retangulotop5{
+                background-image: url(img/image\ 6.png);
+                background-color: white;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 150px;
+                height: 150px;
+            }
+            #retangulobot5{
+                background-color: #FED8B5;
+                width: 150px;
+                height: 100px;
+            }
+    
+            #retangulotop6{
+                background-image: url(img/image\ 7.png);
+                background-color: white;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                width: 150px;
+                height: 150px;
+            }
+            #retangulobot6{
+                background-color: #FED8B5;
+                width: 150px;
+                height: 100px;
+            }
+/*
+        #retangulotop1{
+            background-image: url(img/image\ 2.png);
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+            height: 150px;
+        }
+        #retangulobot1{
+            background-color: #FED8B5;
+            width: 150px;
+            height: 100px;
+        }
+
+        #retangulotop2{
+            background-image: url(img/image\ 3.png);
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+            height: 150px;
+        }
+        #retangulobot2{
+            background-color: #FED8B5;
+            width: 150px;
+            height: 100px;
+        }
+
+        #retangulotop3{
+            background-image: url(img/image\ 4.png);
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+            height: 150px;
+        }
+        #retangulobot3{
+            background-color: #FED8B5;
+            width: 150px;
+            height: 100px;
+        }
+        #retangulotop4{
+            background-image: url(img/image\ 5.png);
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+            height: 150px;
+        }
+        #retangulobot4{
+            background-color: #FED8B5;
+            width: 150px;
+            height: 100px;
+        }
+
+        #retangulotop5{
+            background-image: url(img/image\ 6.png);
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+            height: 150px;
+        }
+        #retangulobot5{
+            background-color: #FED8B5;
+            width: 150px;
+            height: 100px;
+        }
+
+        #retangulotop6{
+            background-image: url(img/image\ 7.png);
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width: 150px;
+            height: 150px;
+        }
+        #retangulobot6{
+            background-color: #FED8B5;
+            width: 150px;
+            height: 100px;
+        }
+    */
+    
+    
+        /*
+        .corpo_main{
+            display: flex;
+            flex-wrap: wrap;
+        }       
+        .boxall
+        {
+            display: flex;
+            position: absolute;
+            flex-direction: column;
+        }
+        .boxlanche{
+            border-radius:  15%;
+            background: white;
+            width: 150px;
+            height: 150px; 
+        }
+        .boxpreco{
+            border-radius: 15%;
+            background: #FED8B5;
+            width: 150px;
+            height: 100px;  
+        }
+        */
+
+/*pé*/        
+        footer{
+            padding-top: 2vmax;
+            padding-bottom: 1vmax;
+        }
+            footer > p
+            {
+                text-align: center;
+            }
