@@ -10,7 +10,6 @@ a{
 strong{
     color: #D42401;
 }       
-
 /*config de corpo*/
 .container1{
     background-color:#F5EBDC;
@@ -18,8 +17,6 @@ strong{
     width: 1150px;
     height: 1450px;
     }
-
-
 /*cabeça*/
         header{
             padding-top: 50px;
@@ -29,7 +26,6 @@ strong{
             background-position: absolute;
             background-position-x: 410px;
             background-position-y: 60px;
-
             text-align: center;
         }
         header > h1{
@@ -46,7 +42,6 @@ strong{
             font-size:20px;
             text-align: center;
         }
-
 /*conteudo*/
         .container2{
             padding: 90px;
@@ -54,7 +49,6 @@ strong{
             flex-flow: row wrap;
             justify-content:stretch;
             align-content: stretch;
-
         } 
         .corpo{
                 height: 300px;
@@ -66,8 +60,13 @@ strong{
                 border:red;
                 background-color:#FE9738;
             }
-            
-            
+            .retangulotop:hover{
+                transform: scale(0.98);
+            }
+            .retangulotop, .corpo{
+                border-radius: 15px 15px 0px 0px;
+            }
+/*box burguer 1*/
             #retangulotop1{
                 background-image: url(img/image\ 2.png);
                 background-color: white;
@@ -82,7 +81,7 @@ strong{
                 width: 300px;
                 height: 100px;
             }
-
+/*box burguer 2*/
             #retangulotop2{
                 background-image: url(img/image\ 3.png);
                 background-color: white;
@@ -97,7 +96,7 @@ strong{
                 width: 300px;
                 height: 100px;
             }
-
+/*box burguer 3*/
             #retangulotop3{
                 background-image: url(img/image\ 4.png);
                 background-color: white;
@@ -112,7 +111,7 @@ strong{
                 width: 300px;
                 height: 100px;
             }
-
+/*box burguer 4*/
             #retangulotop4{
                 background-image: url(img/image\ 5.png);
                 background-color: white;
@@ -127,7 +126,7 @@ strong{
                 width: 300px;
                 height: 100px;
             }
-    
+/*box burguer 5*/
             #retangulotop5{
                 background-image: url(img/image\ 6.png);
                 background-color: white;
@@ -142,7 +141,7 @@ strong{
                 width: 300px;
                 height: 100px;
             }
-    
+/*box burguer 6*/
             #retangulotop6{
                 background-image: url(img/image\ 7.png);
                 background-color: white;
@@ -157,7 +156,7 @@ strong{
                 width: 300px;
                 height: 100px;
             }
-
+/*conf textos*/
             .p1{
                 padding-top: 15px;
                 padding-left: 20px;
