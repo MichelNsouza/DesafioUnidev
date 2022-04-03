@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desafio dev</title>
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body>
 
         <section class="container1">
 
             <header>
+
                 <h1><strong>UN1D3V Lanches</strong></h1>
                 <p id="colap">código e lanches</p>
-                <p>
-                    Vai ficar só na vontade? Escolha agora mesmo o seu lanche e gere seu <strong> Código promocional</strong> ;)
-                </p>
+                <p>Vai ficar só na vontade? Escolha agora mesmo o seu lanche<br> e gere seu <strong> Código promocional</strong> ;)</p>
+
             </header>
 
             <section class="container2">
@@ -55,20 +56,17 @@
                 </article>
 
                 <article class="corpo">
-                    <article id="retangulotop4" class="retangulotop">
-                        <p></p>
-                    </article>
+                    <article id="retangulotop4" class="retangulotop"></article>
                     <article id="retangulobot4" class="retangulobot">
                         <p class="p1">Dev Tasty</p>
                         <p class="p2">100% Carne</p>
-                        <p class="p3">R$ <strong>24,90</strong> </p>
+                        <p class="p3">R$ <strong>24,90</strong></p>
                     </article>
                 </article>
 
                 <article class="corpo">
-                    <article id="retangulotop5" class="retangulotop">
-                        <p></p>
-                    </article>
+
+                    <article id="retangulotop5" class="retangulotop"></article>
                     <article id="retangulobot5" class="retangulobot">
                         <p class="p1">DevNífico</p>
                         <p class="p2">Muito Bacon</p>
@@ -76,33 +74,50 @@
                     </article>
                 </article>
 
-                <article class="corpo">
-                    <article id="retangulotop6" class="retangulotop">
-                        <p></p>
-                    </article>
+                <article class="corpo" onclick="codigobox()" id="btncod">
+                    <article id="retangulotop6" class="retangulotop"></article>
                     <article id="retangulobot6" class="retangulobot">
-                        <p class="p1">DevSquad</p>
-                        <p class="p2">100% Carne</p>
-                        <p class="p3">R$ <strong>19,90</strong></p>
+                        <p class="p1"> DevSquad </p>
+                        <p class="p2"> 100% Carne </p>
+                        <p class="p3"> R$ <strong>19,90</strong> </p>
                     </article>
                 </article>
+ <!-- vai ficar oculto, so aparece quando clica-->  
+
+            <div id="rescodigo">
+                <p>Uhuu!!! Ótima escolha. O ##(Nome do burg)## é um dos mais pedidos!
+                    Pegue agora mesmo o seu código promocional!</p>
+
+                    <div id="codaleatorio">
+                        <p> (cod)#NªNªNªLetraLetra </p>
+                    </div>
+            </div>
+
             </section>
 
-        <!-- vai ficar oculto, so aparece quando clica-->            
-            <section id="codigo">
-                <article>
-                    <p> codigo tal</p>
-                </article>
-            </section>
+       
+
             <footer>
-            <p>
-                © Copyright 2022  - www.devlanches.com.br - All Rights Reserved
-            </p>
-            <p>
-                Construído por <a href="#">Michel Souza</a> para o <a href="#"><strong>UN1D3V</strong></a>
-            </p>
+            <p> © Copyright 2022  - www.devlanches.com.br - All Rights Reserved</p>
+            <p> Construído por <a href="https://www.linkedin.com/in/michel-souza-9662a5229/">Michel Souza</a> para o <a href="#"><strong>UN1D3V</strong></a></p>
             </footer>
 
         </section>
-</body>
+
+<script>
+    var button = document.getElementById("btncod");
+
+    button.addEventListener("click", function() {
+
+        var respostacodigo = document.getElementById("rescodigo");
+
+        if(respostacodigo.style.display === "none") {
+            respostacodigo.style.display = "block"
+        } else {
+            respostacodigo.style.display = "none";
+        }
+    });
+    
+</script>
+=</body>
 </html>

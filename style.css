@@ -15,6 +15,7 @@ strong{
     background-color:#F5EBDC;
     margin: 10vmin;
     width: 1150px;
+   /* height: 1130px;*/
     height: 1450px;
     }
 /*cabeça*/
@@ -39,6 +40,8 @@ strong{
                 padding-left: 95px;
             }
         header > p{
+            font-style: bold;
+            padding: 25px;
             font-size:20px;
             text-align: center;
         }
@@ -56,12 +59,10 @@ strong{
                 margin: 10px;
                 border: 10px;
             }
-            .corpo:hover{
+            .corpo:hover, reta{
                 border:red;
                 background-color:#FE9738;
-            }
-            .retangulotop:hover{
-                transform: scale(0.98);
+                transform: scale(0.95);
             }
             .retangulotop, .corpo{
                 border-radius: 15px 15px 0px 0px;
@@ -178,8 +179,10 @@ strong{
                 font-size: 34px ;
             }
 
-        #codigo{
+        #rescodigo{
             /*block faz aparecer*/ 
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.514);
             display: none;
             margin: 80px 80px 0px 80px;
             background-color: white;
@@ -187,15 +190,22 @@ strong{
             height: 250px;
             text-align: center;
     }
-        #codigo > p{
+        #rescodigo > p{
+            margin:20px;
             padding: 20px;
             text-align: center;
             font-size: 30px;
         }
+        #codaleatorio > p {
+            margin:20px;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px; 
+        }
 /*pé*/        
         footer{
-            padding-top: 2vmax;
-            padding-bottom: 1vmax;
+            padding-top: 5px;
+            padding-bottom: 5px;
         }
             footer > p
             {
