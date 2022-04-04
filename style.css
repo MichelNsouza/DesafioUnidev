@@ -2,6 +2,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 a{
     text-decoration: none;
@@ -23,9 +24,10 @@ strong{
             padding-top: 50px;
             background:url(img/image\ 1.png);
             background-repeat: no-repeat;
-            background-size: 50px;
+            background-size: 6
+            70px;
             background-position: absolute;
-            background-position-x: 410px;
+            background-position-x: 365px;
             background-position-y: 60px;
             text-align: center;
         }
@@ -34,12 +36,14 @@ strong{
             font-size: 28px;
         }
             #colap{
+                color:#502314;
                 text-align: center;
                 font-size: 18px;
                 padding-top: 0;
                 padding-left: 95px;
             }
         header > p{
+            color:#502314;
             font-style: bold;
             padding: 25px;
             font-size:20px;
@@ -54,12 +58,13 @@ strong{
             align-content: stretch;
         } 
         .corpo{
+                cursor: pointer;
                 height: 300px;
                 background-color:#FED8B5;
                 margin: 10px;
                 border: 10px;
             }
-            .corpo:hover, reta{
+            .corpo:hover{
                 border:red;
                 background-color:#FE9738;
                 transform: scale(0.95);
@@ -179,11 +184,10 @@ strong{
                 font-size: 34px ;
             }
 
-        #rescodigo{
-            /*block faz aparecer*/ 
-            border-radius: 10px 10px 10px 10px;
-            box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.514);
-            display: none;
+        #rescodigo {
+            display: block;
+            border-radius: 5px 5px 10px 10px;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.39);
             margin: 80px 80px 0px 80px;
             background-color: white;
             width: 950px;
@@ -191,17 +195,35 @@ strong{
             text-align: center;
     }
         #rescodigo > p{
-            margin:20px;
-            padding: 20px;
-            text-align: center;
-            font-size: 30px;
+            padding-top: 30px;
+            color: #502314;
+            font-size: 24px;
         }
-        #codaleatorio > p {
-            margin:20px;
-            padding: 20px;
-            text-align: center;
-            font-size: 30px; 
+        #corpocod{
+            padding-top:35px;
+            padding-left: 250px;
+            display: flex;
+            flex-flow: row;
         }
+        #quadrado{
+            background-color: #FED8B5;
+            width: 86px;
+            height: 90px;
+        }
+        #codaleatorio{
+            background-color: #F5EBDC;
+            width: 240px;
+            height: 90px;
+            box-shadow:5px 0px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 0px 15px 15px 0px;
+        }
+            #codaleatorio > p{
+                color: #502314;
+                font-size: 36px;
+                text-align: center;
+                padding: 30px;
+            }    
+
 /*pé*/        
         footer{
             padding-top: 5px;
@@ -209,5 +231,7 @@ strong{
         }
             footer > p
             {
+                font-size: 20px;
+                color:#502314;
                 text-align: center;
             }

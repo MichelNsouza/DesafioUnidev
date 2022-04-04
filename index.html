@@ -6,56 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desafio dev</title>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
 </head>
 <body>
-
+<!--corpo -->    
         <section class="container1">
-
+<!-- cabeça do corpo -->
             <header>
-
                 <h1><strong>UN1D3V Lanches</strong></h1>
                 <p id="colap">código e lanches</p>
                 <p>Vai ficar só na vontade? Escolha agora mesmo o seu lanche<br> e gere seu <strong> Código promocional</strong> ;)</p>
-
             </header>
-
+<!-- retangulo maior -->
             <section class="container2">
-
-                <article class="corpo">
-                    <article id="retangulotop1" class="retangulotop">
-                        <p></p>
-                    </article>
+<!-- burg 1 -->
+                <article class="corpo" onclick="openbox()">
+                    <article id="retangulotop1" class="retangulotop"></article>
                     <article id="retangulobot1" class="retangulobot">
                         <p class="p1">BigDev</p>
                         <p class="p2">Com 2 carnes</p>
                         <p class="p3"> R$ <strong>19,90</strong> </p>
                     </article>
                 </article>
-
-                <article class="corpo">
-                    <article id="retangulotop2" class="retangulotop">
-                        <p></p>
-                    </article>
+<!-- burg 2 -->
+                <article class="corpo" onclick="openbox()">
+                    <article id="retangulotop2" class="retangulotop"></article>
                     <article id="retangulobot2" class="retangulobot">
                         <p class="p1">DevChicken</p>
                         <p class="p2">100% Frango</p>
                         <p class="p3"> R$ <strong>9,90</strong> </p>
                     </article>
                 </article>
-
-                <article class="corpo">
-                    <article id="retangulotop3" class="retangulotop">
-                        <p></p>
-                    </article>
+<!-- burg 3 -->
+                <article class="corpo" onclick="openbox()">
+                    <article id="retangulotop3" class="retangulotop"></article>
                     <article id="retangulobot3" class="retangulobot">
                         <p class="p1">Dev Cheddar</p>
                         <p class="p2">O melhor Cheddar</p>
                         <p class="p3">R$ <strong>19,90</strong></p>
                     </article>
                 </article>
-
-                <article class="corpo">
+<!-- burg 4 -->
+                <article class="corpo" onclick="openbox()">
                     <article id="retangulotop4" class="retangulotop"></article>
                     <article id="retangulobot4" class="retangulobot">
                         <p class="p1">Dev Tasty</p>
@@ -63,9 +54,8 @@
                         <p class="p3">R$ <strong>24,90</strong></p>
                     </article>
                 </article>
-
-                <article class="corpo">
-
+<!-- burg 5 -->
+                <article class="corpo" onclick="openbox()">
                     <article id="retangulotop5" class="retangulotop"></article>
                     <article id="retangulobot5" class="retangulobot">
                         <p class="p1">DevNífico</p>
@@ -73,51 +63,33 @@
                         <p class="p3">R$ <strong>19,90</strong></p>
                     </article>
                 </article>
-
-                <article class="corpo" onclick="codigobox()" id="btncod">
+<!-- burg 6 -->
+                <article class="corpo" onclick="openbox()">
                     <article id="retangulotop6" class="retangulotop"></article>
                     <article id="retangulobot6" class="retangulobot">
                         <p class="p1"> DevSquad </p>
                         <p class="p2"> 100% Carne </p>
-                        <p class="p3"> R$ <strong>19,90</strong> </p>
+                        <p class="p3"> R$ <strong>19,90</strong></p>
                     </article>
                 </article>
- <!-- vai ficar oculto, so aparece quando clica-->  
-
+<!-- box de codigo -->  
             <div id="rescodigo">
-                <p>Uhuu!!! Ótima escolha. O ##(Nome do burg)## é um dos mais pedidos!
+                <p>Uhuu!!! Ótima escolha. O <strong>#########</strong> é um dos mais pedidos! <br>
                     Pegue agora mesmo o seu código promocional!</p>
-
-                    <div id="codaleatorio">
-                        <p> (cod)#NªNªNªLetraLetra </p>
-                    </div>
-            </div>
-
+                    <section id="corpocod">
+                        <article id="quadrado"></article>
+                        <article id="codaleatorio">
+                         <p>#NNNLL</p>
+                        </article>
+                    </section>
             </section>
-
-       
-
+        </div>
+<!-- rodape -->
             <footer>
             <p> © Copyright 2022  - www.devlanches.com.br - All Rights Reserved</p>
             <p> Construído por <a href="https://www.linkedin.com/in/michel-souza-9662a5229/">Michel Souza</a> para o <a href="#"><strong>UN1D3V</strong></a></p>
             </footer>
-
         </section>
-
-<script>
-    var button = document.getElementById("btncod");
-
-    button.addEventListener("click", function() {
-
-        var respostacodigo = document.getElementById("rescodigo");
-
-        if(respostacodigo.style.display === "none") {
-            respostacodigo.style.display = "block"
-        } else {
-            respostacodigo.style.display = "none";
-        }
-    });
-    
-</script>
-=</body>
+<script src="javascript.js"></script>
+</body>
 </html>
