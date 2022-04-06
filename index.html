@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desafio dev</title>
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 <!--corpo -->    
@@ -14,7 +14,7 @@
             <header>
                 <h1><strong>UN1D3V Lanches</strong></h1>
                 <p id="colap">código e lanches</p>
-                <p>Vai ficar só na vontade? Escolha agora mesmo o seu lanche<br> e gere seu <strong> Código promocional</strong> ;)</p>
+                <p>Vai ficar só na vontade? Escolha agora mesmo o seu lanche<br>e gere seu <strong> Código promocional</strong> ;)</p>
             </header>
 <!-- retangulo maior -->
             <section class="container2">
@@ -22,7 +22,7 @@
                 <article id="burg1" class="corpo" onclick="openbox(id)">
                     <article id="retangulotop1" class="retangulotop"></article>
                     <article id="retangulobot1" class="retangulobot">
-                        <p class="p1">BigDev</p>
+                        <p class="p1" name="p1">BigDev</p>
                         <p class="p2">Com 2 carnes</p>
                         <p class="p3"> R$ <strong>19,90</strong> </p>
                     </article>
@@ -31,7 +31,7 @@
                 <article id="burg2" class="corpo" onclick="openbox(id)">
                     <article id="retangulotop2" class="retangulotop"></article>
                     <article id="retangulobot2" class="retangulobot">
-                        <p class="p1">DevChicken</p>
+                        <p class="p1" name="p1">DevChicken</p>
                         <p class="p2">100% Frango</p>
                         <p class="p3"> R$ <strong>9,90</strong> </p>
                     </article>
@@ -74,59 +74,19 @@
                 </article>
 <!-- box de codigo -->  
             <div id="rescodigo">
-                <p>Uhuu!!! Ótima escolha. O <strong>#########</strong> é um dos mais pedidos! <br>
-                    Pegue agora mesmo o seu código promocional!</p>
-                    <section id="corpocod">
+                <p>Uhuu!!! Ótima escolha. O <strong>#chama nome do burg#</strong> é um dos mais pedidos!<br>Pegue agora mesmo o seu código promocional!</p>
+                   <section id="corpocod">
                         <article id="quadrado"></article>
-                        <article id="codaleatorio">
-                         <p id="all"> ###
-                         </p>
-                        </article>
+                        <article id="codaleatorio"><p id="all"> # </p></article>
                     </section>
-            </section>
-        </div>
+            </div>
 <!-- rodape -->
             <footer>
             <p> © Copyright 2022  - www.devlanches.com.br - All Rights Reserved</p>
             <p> Construído por <a href="https://www.linkedin.com/in/michel-souza-9662a5229/">Michel Souza</a> para o <a href="#"><strong>UN1D3V</strong></a></p>
             </footer>
+            </section>
         </section>
-<!--<script src="javascript.js"></script> -->
-<script>
-    function numeroaleatorio(){
-        return Math.floor(Math.random() * 999);
-    }
-    var txtaleatorio = numeroaleatorio();
-    
-    function letraaleatoria(){
-        return Math.random().toString(36);
-    }
-    var txtletraaleatoria = letraaleatoria();
-    console.log(txtletraaleatoria)
-
-    function openbox(){
-        var respostacodigo = document.getElementById("rescodigo");       
-        if(respostacodigo.style.display === "block") {
-            respostacodigo.style.display = "none";
-        } else {
-            respostacodigo.style.display = "block";
-            document.getElementById("all").textContent= txtaleatorio;
-        }
-    }
-    
-    
-    /* teste
-        var button = document.documentElement ??? ("corpo");
-        button.addEventListener("click", function(){
-            var respostacodigo = document.getElementById("rescodigo");
-            if(respostacodigo.style.display === "block") {
-                respostacodigo.style.display = "none"
-            } else {
-                respostacodigo.style.display = "block";
-            }
-        });
-    */
-</script>
-
+<script src="javascript.js"></script>
 </body>
 </html>
