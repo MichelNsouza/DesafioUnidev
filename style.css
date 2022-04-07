@@ -1,25 +1,20 @@
-/*confg global*/
 *{
 margin: 0;
 padding: 0;
-
 }
 a{
-text-decoration: none;
-color: none;
+    text-decoration: none;
+    color: none;
 }
 strong{
-color: #D42401;
+    color: #D42401;
 }       
-/*config de corpo*/
-.container1{
-background-color:#F5EBDC;
-margin: 10vmin;
-width: 1150px;
-/* height: 1130px;*/
-height: 1450px;
+#container1{
+    background-color:#F5EBDC;
+    margin: 10vmin;
+    width: 1150px;
+    height: 1130px;
 }
-/*cabeça*/
 header{
     padding-top: 50px;
     background:url(img/image\ 1.png);
@@ -31,161 +26,99 @@ header{
     background-position-y: 60px;
     text-align: center;
 }
-header > h1{
-    padding-top: 20px;
-    font-size: 28px;
-}
-    #colap{
-        color:#502314;
-        text-align: center;
-        font-size: 18px;
-        padding-top: 0;
-        padding-left: 95px;
-    }
-header > p{
-    color:#502314;
-    font-style: bold;
-    padding: 25px;
-    font-size:20px;
-    text-align: center;
-}
-/*conteudo*/
-.container2{
+    header > h1{
+        padding-top: 20px;
+        font-size: 28px;
+        }
+        header > p{
+            color:#502314;
+            font-style: bold;
+            padding: 25px;
+            font-size:20px;
+            text-align: center;
+        }
+            #colap{
+                color:#502314;
+                text-align: center;
+                font-size: 18px;
+                padding-top: 0;
+                padding-left: 95px;
+            }
+#container2{
     padding: 90px;
     display: flex;
     flex-flow: row wrap;
     justify-content:stretch;
     align-content: stretch;
 } 
-.corpo{
-        cursor: pointer;
-        height: 300px;
-        background-color:#FED8B5;
-        margin: 10px;
-        border: 10px;
-    }
-    .corpo:hover{
-        border:red;
-        background-color:#FE9738;
-        transform: scale(0.95);
-    }
-    .retangulotop, .corpo{
-        border-radius: 15px 15px 0px 0px;
-    }
-/*box burguer 1*/
-    #retangulotop1{
-        background-image: url(img/image\ 2.png);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 300px;
-        height: 200px;
-    }
-    #retangulobot1{
-        background-color: transparent;
-        width: 300px;
-        height: 100px;
-    }
-/*box burguer 2*/
-    #retangulotop2{
-        background-image: url(img/image\ 3.png);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 300px;
-        height: 200px;
-    }
-    #retangulobot2{
-        background-color: transparent;
-        width: 300px;
-        height: 100px;
-    }
-/*box burguer 3*/
-    #retangulotop3{
-        background-image: url(img/image\ 4.png);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 300px;
-        height: 200px;
-    }
-    #retangulobot3{
-        background-color: transparent;
-        width: 300px;
-        height: 100px;
-    }
-/*box burguer 4*/
-    #retangulotop4{
-        background-image: url(img/image\ 5.png);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 300px;
-        height: 200px;
-    }
-    #retangulobot4{
-        background-color: transparent;
-        width: 300px;
-        height: 100px;
-    }
-/*box burguer 5*/
-    #retangulotop5{
-        background-image: url(img/image\ 6.png);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 300px;
-        height: 200px;
-    }
-    #retangulobot5{
-        background-color: transparent;
-        width: 300px;
-        height: 100px;
-    }
-/*box burguer 6*/
-    #retangulotop6{
-        background-image: url(img/image\ 7.png);
-        background-color: white;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 300px;
-        height: 200px;
-    }
-    #retangulobot6{
-        background-color: transparent;
-        width: 300px;
-        height: 100px;
-    }
-/*conf textos*/
-    .p1{
-        padding-top: 15px;
-        padding-left: 20px;
-        color:#D42401;
-        font-weight: bold;
-        font-size: 20px;
-    }
-    .p2{
-        font-size: 14px;
-        padding-left: 20px;
-    }
-    .p3{
-        padding-right: 20px;
-        font-size: 18px;
-        text-align: right;
-        padding-bottom: 20px;
-    }
+    .corpo{
+            cursor: pointer;
+            height: 300px;
+            background-color:#FED8B5;
+            margin: 10px;
+            border: 10px;
+        }
+        .corpo:hover{
+            border:red;
+            background-color:#FE9738;
+            transform: scale(0.95);
+        }
+            .retangulotop, .corpo{
+                border-radius: 15px 15px 0px 0px;
+            }
+.retangulotop{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 300px;
+    height: 200px;
+}
+.retangulobot{
+    background-color: transparent;
+    width: 300px;
+    height: 100px;
+}
+#retangulotop1{
+    background-image: url(img/image\ 2.png);
+}
+#retangulotop2{
+    background-image: url(img/image\ 3.png);
+}
+#retangulotop3{
+    background-image: url(img/image\ 4.png);
+}
+#retangulotop4{
+    background-image: url(img/image\ 5.png);
+}
+#retangulotop5{
+    background-image: url(img/image\ 6.png);
+}
+#retangulotop6{
+    background-image: url(img/image\ 7.png);
+}
+.p1{
+    padding-top: 15px;
+    padding-left: 20px;
+    color:#D42401;
+    font-weight: bold;
+    font-size: 20px;
+}
+.p2{
+    font-size: 14px;
+    padding-left: 20px;
+}
+.p3{
+    padding-right: 20px;
+    font-size: 18px;
+    text-align: right;
+    padding-bottom: 20px;
+}
     .p3 > strong{
-        font-size: 34px ;
+        font-size: 34px;
     }
-
 #rescodigo {
-    display: block;
+    display: none;
     border-radius: 5px 5px 10px 10px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.39);
     margin: 80px 80px 0px 80px;
@@ -194,43 +127,41 @@ header > p{
     height: 250px;
     text-align: center;
 }
-#rescodigo > p{
-    padding-top: 30px;
-    color: #502314;
-    font-size: 24px;
-}
-#corpocod{
-    padding-top:35px;
+    #rescodigo > p{
+        padding-top: 30px;
+        color: #502314;
+        font-size: 24px;
+    }
+#retanguloale{
+    padding-top:20px;
     padding-left: 250px;
     display: flex;
     flex-flow: row;
 }
-#quadrado{
+#quadradoale{
     background-color: #FED8B5;
     width: 86px;
     height: 90px;
 }
-#codaleatorio{
+#codealeatorio{
     background-color: #F5EBDC;
     width: 240px;
     height: 90px;
     box-shadow:5px 0px 4px rgba(0, 0, 0, 0.15);
     border-radius: 0px 15px 15px 0px;
 }
-    #codaleatorio > p{
+    #codealeatorio > p{
         color: #502314;
         font-size: 36px;
         text-align: center;
-        padding: 30px;
+        padding: 25px;
     }    
-
-/*pé*/        
 footer{
+    padding-left: 215px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-    footer > p
-    {
+    footer > p {
         font-size: 20px;
         color:#502314;
         text-align: center;
