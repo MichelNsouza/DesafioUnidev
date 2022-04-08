@@ -1,4 +1,5 @@
-*{
+/* config geral */
+    *{
 margin: 0;
 padding: 0;
 }
@@ -8,13 +9,15 @@ a{
 }
 strong{
     color: #D42401;
-}       
+}
+/* config box maior "corpo principal" */
 #container1{
     background-color:#F5EBDC;
     margin: 10vmin;
     width: 1150px;
     height: 1130px;
 }
+/* configs de cabeça */
 header{
     padding-top: 50px;
     background:url(img/image\ 1.png);
@@ -44,41 +47,67 @@ header{
                 padding-top: 0;
                 padding-left: 95px;
             }
+/* area dos burgs */
 #container2{
     padding: 90px;
     display: flex;
     flex-flow: row wrap;
     justify-content:stretch;
     align-content: stretch;
-} 
-    .corpo{
+}
+/* retangulo superior da area dos burgs */
+    .retangulotop{
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 300px;
+        height: 200px;
+    }
+/* retangulo inferior da area dos burgs */
+    .retangulobot{
+        background-color: transparent;
+        width: 300px;
+        height: 100px;
+    }
+/* junção das duas areas do burg, //////// faz sentido???/////// REVER*/
+        .corpo{
             cursor: pointer;
             height: 300px;
             background-color:#FED8B5;
             margin: 10px;
             border: 10px;
         }
-        .corpo:hover{
+        .retangulotop, .corpo{
+            border-radius: 15px 15px 0px 0px;
+        }
+            .ativo, .corpo:hover{
             border:red;
             background-color:#FE9738;
             transform: scale(0.95);
-        }
-            .retangulotop, .corpo{
-                border-radius: 15px 15px 0px 0px;
             }
-.retangulotop{
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 300px;
-    height: 200px;
-}
-.retangulobot{
-    background-color: transparent;
-    width: 300px;
-    height: 100px;
-}
+/* config dos 3P do box burg */
+.p1{
+    padding-top: 15px;
+    padding-left: 20px;
+    color:#D42401;
+    font-weight: bold;
+    font-size: 20px;
+    }
+    .p2{
+        font-size: 14px;
+        padding-left: 20px;
+        }
+        .p3{
+            padding-right: 20px;
+            font-size: 18px;
+            text-align: right;
+            padding-bottom: 20px;
+            }
+            .p3 > strong{
+                font-size: 34px;
+                }
+/* img de cada burg */
 #retangulotop1{
     background-image: url(img/image\ 2.png);
 }
@@ -97,26 +126,7 @@ header{
 #retangulotop6{
     background-image: url(img/image\ 7.png);
 }
-.p1{
-    padding-top: 15px;
-    padding-left: 20px;
-    color:#D42401;
-    font-weight: bold;
-    font-size: 20px;
-}
-.p2{
-    font-size: 14px;
-    padding-left: 20px;
-}
-.p3{
-    padding-right: 20px;
-    font-size: 18px;
-    text-align: right;
-    padding-bottom: 20px;
-}
-    .p3 > strong{
-        font-size: 34px;
-    }
+/* area de cupom, que fica oculta */
 #rescodigo {
     display: none;
     border-radius: 5px 5px 10px 10px;
@@ -132,30 +142,36 @@ header{
         color: #502314;
         font-size: 24px;
     }
-#retanguloale{
-    padding-top:20px;
-    padding-left: 250px;
-    display: flex;
-    flex-flow: row;
-}
-#quadradoale{
-    background-color: #FED8B5;
-    width: 86px;
-    height: 90px;
-}
-#codealeatorio{
-    background-color: #F5EBDC;
-    width: 240px;
-    height: 90px;
-    box-shadow:5px 0px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 0px 15px 15px 0px;
-}
-    #codealeatorio > p{
-        color: #502314;
-        font-size: 36px;
-        text-align: center;
-        padding: 25px;
-    }    
+ 
+/* quadrado q não sei a função, estetica?  */
+        #quadradoale{
+            background-color: #FED8B5;
+            width: 86px;
+            height: 90px;
+        }
+/*  retangulo onde imprime os codes aleatorios*/
+        #codealeatorio{
+            background-color: #F5EBDC;
+            width: 240px;
+            height: 90px;
+            box-shadow:5px 0px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 0px 15px 15px 0px;
+        }
+/* config do paragrafo  */
+            #codealeatorio > p{
+                color: #502314;
+                font-size: 36px;
+                text-align: center;
+                padding: 25px;
+            }
+/* junta o quadrado e o retangulo//// faz sentido? REVER */
+        #retanguloale{
+            padding-top:20px;
+            padding-left: 250px;
+            display: flex;
+            flex-flow: row;
+        }
+/* final da pag */    
 footer{
     padding-left: 215px;
     padding-top: 5px;
