@@ -3,7 +3,7 @@
 Este repositório contém a atividade proposta pelo Professor Paulo Reis para ingresso no nucleo de desenvolvimento unidev.
 
 ## Tecnologias utilizadas
-- HTML, CSS 
+- HTML, CSS e JS
 
   
 ## Deploy
